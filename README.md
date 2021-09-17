@@ -1,15 +1,10 @@
-# For building TWRP for Xiaomi Redmi 5 Plus (Global) & Redmi Note 5 (India) ONLY
+# TWRP Tree for Xiaomi Redmi 5 Plus (Global) & Redmi Note 5 (India) ONLY
 
 To compile:
 
 ```
-. build/envsetup.sh 
-lunch omni_vince-eng
-mka recoveryimage
+source build/envsetup.sh; lunch omni_vince-eng; mka recoveryimage
 ```
-
-Kernel source: [StormBreaker-Project for vince](https://github.com/stormbreaker-project/kernel_xiaomi_vince)
-
 ## Spec Sheet
 
 | Feature                 | Specification                     |
@@ -36,6 +31,7 @@ Kernel source: [StormBreaker-Project for vince](https://github.com/stormbreaker-
 - [x] Backup to internal/microSD
 - [x] Restore from internal/microSD
 - [x] reboot to system
+- [x] reboot to EDL Mode (9008)
 - [x] ADB
 
 ➜ Medium checks
